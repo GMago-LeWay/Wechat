@@ -19,7 +19,7 @@
 首先我们进行Flask应用的基本初始化。
 
 //代码块开始（希望排版时要作出代码块的效果，秀米上应该有，后面的代码也希望用代码块的方式，因为截图比较丑而且不清晰，这里不是图片，是保留了原格式，代码可复制）
-'''
+```
 from flask import Flask, request, abort, render_template
 import hashlib
 import xmltodict
@@ -34,7 +34,7 @@ from myapp import response         # 自己编写的应用，将另一个脚本�
 WECHAT_TOKEN = 'MyToken'
 app = Flask(__name__)
 @app.route("/", methods=["POST","GET"])
-'''
+```
 
 接下来我们就正式开始编写一个用于微信公众号后台信息处理的程序。这部分可能会涉及一些计算机通信协议的知识，大家不理解也没关系，因为以下基本就是一套程序模板，可以直接用。（但如果想要更全面的开发，还是需要这方面知识的）有关微信公众号的开发，有官方文档，在公众号管理页面下面“开发”一栏内的“开发者工具”之内。
 
